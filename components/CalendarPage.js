@@ -118,7 +118,7 @@ const width = Dimensions.get('window').width;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 50,
     width: width - 40,
   },
   calendar: {

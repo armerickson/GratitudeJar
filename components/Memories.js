@@ -100,7 +100,7 @@ export default Memories;
 const width = Dimensions.get('window').width;
 const styles = StyleSheet.create({
   container: {
-    marginTop: 30,
+    marginTop: 50,
     marginBottom: 20,
     width: width - 40,
     flex: 1,

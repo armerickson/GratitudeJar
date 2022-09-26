@@ -14,6 +14,9 @@ import React, { useState, useEffect } from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import colors from '../misc/colors';
 import ScreenTemplate from './ScreenTemplate';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+AsyncStorage.clear();
 
 function JournalScreen({name, notes, setNotes, quote, todaysNumericalDate, currentDateObj}) {
   const months = [
@@ -173,7 +176,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: width - 40,
-    marginTop: 30,
+    marginTop: 50,
     marginBottom: 20,
   },
   header: {
@@ -232,13 +235,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-Regular',
     borderRadius: 5,
     paddingVertical: 10,
+    paddingHorizontal: 10,
     lineHeight: 25,
     minHeight: 60,
     fontSize: 16,
     borderBottomColor: 'rgba(248, 248, 255, 0.3)',
     borderBottomWidth: 1,
     marginVertical: 10,
-    width: width,
+    width: width - 40,
   },
   saveBtn: {
     height: 30,
