@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "gratitudejar2",
-    "slug": "gratitudejar2",
+    "name": "Gratitude Jar",
+    "slug": "gratitudejar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/jar-icon2.png",
@@ -32,7 +32,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "95e11f12-ff40-42f7-bd93-7e2186f0accb"
+        "projectId": "377b3108-25d6-45ab-9567-cc05b0847484"
       }
     }
   }
